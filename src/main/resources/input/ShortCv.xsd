@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.svenskqa.se" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CV" type="sven:CVType" xmlns:sven="http://www.svenskqa.se"/>
+  <xs:complexType name="CVType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="FirstName"/>
+      <xs:element type="xs:string" name="LastName"/>
+      <xs:element type="xs:string" name="PersonNumber"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

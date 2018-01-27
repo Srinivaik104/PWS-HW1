@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<c:Companies xmlns:c="http://www.svenskqa.se">
+	<c:Company>
+		<c:Name>PayPal</c:Name>
+		<c:CompanyNumber>01</c:CompanyNumber>
+		<c:PhoneNumber>077777777</c:PhoneNumber>
+		<c:JobType>Permanent</c:JobType>
+	</c:Company>
+	<c:Company>
+		<c:Name>Gamestop</c:Name>
+		<c:CompanyNumber>02</c:CompanyNumber>
+		<c:PhoneNumber>0888888888</c:PhoneNumber>
+		<c:JobType>Temporary</c:JobType>
+	</c:Company>
+</c:Companies>

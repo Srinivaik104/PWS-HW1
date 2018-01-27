@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.svenskqa.se" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Companies" type="sven:CompaniesType" xmlns:sven="http://www.svenskqa.se"/>
+  <xs:complexType name="CompaniesType">
+    <xs:sequence>
+      <xs:element type="sven:CompanyType" name="Company" maxOccurs="unbounded" minOccurs="0" xmlns:sven="http://www.svenskqa.se"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CompanyType">
+    <xs:sequence>
+      <xs:element name="Name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="PayPal"/>
+            <xs:enumeration value="Gamestop"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="CompanyNumber">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="01"/>
+            <xs:enumeration value="02"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PhoneNumber">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="077777777"/>
+            <xs:enumeration value="0888888888"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="JobType">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Permanent"/>
+            <xs:enumeration value="Temporary"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

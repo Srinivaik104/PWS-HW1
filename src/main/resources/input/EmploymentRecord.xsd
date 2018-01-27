@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.EmploymentInfo.se" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Employee" type="emp:EmployeeType" xmlns:emp="http://www.EmploymentInfo.se"/>
+  <xs:complexType name="EmploymentType">
+    <xs:sequence>
+      <xs:element name="CompanyName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="PayPal"/>
+            <xs:enumeration value="Gamestop"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Role">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Sr.Developer"/>
+            <xs:enumeration value="Customer Support"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="StartDate">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2012-01-01"/>
+            <xs:enumeration value="2017-01-01"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="EndDate">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2017-01-01"/>
+            <xs:enumeration value="2018-01-01"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EmployeeType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="xs:string" name="PersonNumber"/>
+      <xs:element type="emp:EmploymentType" name="Employment" maxOccurs="unbounded" minOccurs="0" xmlns:emp="http://www.EmploymentInfo.se"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
