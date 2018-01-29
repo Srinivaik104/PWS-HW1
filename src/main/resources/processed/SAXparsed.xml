@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ap:StudiesInfo xmlns:ap="http://www.kth.se/applicationprofile">
+  <ap:University>SRM</ap:University>
+  <ap:Degree>Btech</ap:Degree>
+  <ap:Year>2008</ap:Year>
+  <ap:GPA>99</ap:GPA>
+  <ap:Courses>
+    <ap:Course>
+      <ap:Name>Maths</ap:Name>
+      <ap:Code>IT111</ap:Code>
+      <ap:Grade>99</ap:Grade>
+    </ap:Course>
+    <ap:Course>
+      <ap:Name>Database Engineering</ap:Name>
+      <ap:Code>IT007</ap:Code>
+      <ap:Grade>100</ap:Grade>
+    </ap:Course>
+  </ap:Courses>
+</ap:StudiesInfo>

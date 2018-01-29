@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.svenskqa.se" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Transcript" type="sven:TranscriptType" xmlns:sven="http://www.svenskqa.se"/>
+  <xs:complexType name="CoursesType">
+    <xs:sequence>
+      <xs:element type="sven:CourseType" name="Course" maxOccurs="unbounded" minOccurs="0" xmlns:sven="http://www.svenskqa.se"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TranscriptType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="xs:string" name="PersonNumber"/>
+      <xs:element type="xs:string" name="University"/>
+      <xs:element type="xs:string" name="Degree"/>
+      <xs:element type="xs:string" name="Year"/>
+      <xs:element type="sven:CoursesType" name="Courses" xmlns:sven="http://www.svenskqa.se"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CourseType">
+    <xs:sequence>
+      <xs:element name="Name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Database Engineering"/>
+            <xs:enumeration value="Maths"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Code">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="IT007"/>
+            <xs:enumeration value="IT111"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Grade">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="100"/>
+            <xs:enumeration value="99"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

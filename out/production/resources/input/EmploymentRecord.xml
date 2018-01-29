@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Employee xmlns:e="http://www.EmploymentInfo.se">
+	<e:Name>Bharath Karthikeyan</e:Name>
+	<e:PersonNumber>9209269317</e:PersonNumber>
+	<e:Employment>
+		<e:CompanyName>PayPal</e:CompanyName>
+		<e:Role>Sr.Developer</e:Role>
+		<e:StartDate>2012-01-01</e:StartDate>
+		<e:EndDate>2017-01-01</e:EndDate>
+	</e:Employment>
+	<e:Employment>
+		<e:CompanyName>Gamestop</e:CompanyName>
+		<e:Role>Customer Support</e:Role>
+		<e:StartDate>2017-01-01</e:StartDate>
+		<e:EndDate>2018-01-01</e:EndDate>
+	</e:Employment>
+</e:Employee>
